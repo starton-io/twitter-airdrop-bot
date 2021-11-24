@@ -43,8 +43,8 @@ It will fetch all the tweet with a specific hashtag then check if this is a quot
 If it is the case, it will parse the tweet to find an address and save it in the file "addresses.csv" if it is the case.
 
 ```bash
-git clone <repo>
-cd <repo>
+git clone https://github.com/starton-io/twitter-airdrop-bot
+cd twitter-airdrop-bot
 yarn install (or npm install)
 node fetchTweet.js
 ```

@@ -19,11 +19,13 @@ When you have your credentials you need to set them on a .env file
 
 `TWITTER_ACCESS_SECRET=`
 
-You also need to set the tweet id and hashtag related to you contest.
+You also need to set the amount, tweetId and hashtag related to you contest.
 
 `TWITTER_TWEET_ID=` You can find it in the url of your tweet
 
 `TWITTER_HASHTAG=`
+
+`TOKEN_AMOUNT=`
 
 ## Starton Connect
 You need to have a Starton Connect account.

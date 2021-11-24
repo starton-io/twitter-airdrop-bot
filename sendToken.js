@@ -51,7 +51,7 @@ const run = async() => {
             functionName: 'mint',
             params: [
                 address,
-                '1000000000000000000000'
+                process.env.TOKEN_AMOUNT
             ],
         }).then(response => {
             console.log(address, response.data.transactionHash, total)

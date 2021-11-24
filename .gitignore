@@ -1,0 +1,6 @@
+.env
+addresses.csv
+fail.csv
+hash.csv
+.idea
+node_modules

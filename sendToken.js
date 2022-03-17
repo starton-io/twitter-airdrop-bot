@@ -8,7 +8,7 @@ require('dotenv').config()
  * Init Starton
  */
 const starton = axios.create({
-    baseURL: "https://api-connect.starton.io/v1",
+    baseURL: "https://api.starton.io/v2",
     headers: {
         "x-api-key": process.env.STARTON_API_KEY,
     },
@@ -47,7 +47,7 @@ fs.createReadStream('addresses.csv')
 
 const run = async() => {
     for (const address of toSend) {
-        starton.post(`/smart-contract/${process.env.STARTON_SMART_CONTRACT_ID}/interact`, {
+        starton.post(`/smart-contract/${process.env.STARTON_SMART_CONTRACT_NETWORK}/${process.env.STARTON_SMART_CONTRACT_ADDRESS}/call`, {
             functionName: 'mint',
             params: [
                 address,

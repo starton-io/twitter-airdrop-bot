@@ -38,9 +38,10 @@ You will need to add it to the `.env` file aswell.
 
 You can now deploy a new contract or import an existing one in Starton's [`Deploy` section](https://connect.starton.io/deploy).
 
-Once deployed you should see in the url the `smart contract id` which you need to add in the `.env` file.
+Once deployed you should add in the `.env` file:
 
-- `STARTON_SMART_CONTRACT_ID=`
+- `STARTON_SMART_CONTRACT_ADDRESS=`
+- `STARTON_SMART_CONTRACT_NETWORK=`
 
 # Start the bot
 ## Get the winners

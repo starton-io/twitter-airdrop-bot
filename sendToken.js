@@ -1,4 +1,4 @@
-const { default: axios } = require('axios')
+const  axios = require('axios')
 const csv = require('csv-parser')
 const createCsvWriter = require('csv-writer').createObjectCsvWriter
 const fs = require('fs')
@@ -49,6 +49,7 @@ const run = async() => {
     for (const address of toSend) {
         starton.post(`/smart-contract/${process.env.STARTON_SMART_CONTRACT_NETWORK}/${process.env.STARTON_SMART_CONTRACT_ADDRESS}/call`, {
             functionName: 'mint',
+            signerWallet: process.env.STARTON_SMART_CONTRACT_SIGNER,
             params: [
                 address,
                 process.env.TOKEN_AMOUNT

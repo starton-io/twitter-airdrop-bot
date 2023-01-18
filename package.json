@@ -1,9 +1,9 @@
 {
   "name": "starton-quote-retweet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Starton twitter bot. This bot send token / nft to people who quote retweet a specific tweet with a specific hashtag and an address",
   "main": "fetchTweet.js",
-  "author": "Cedric Cervantes <cedric@starton.io>",
+  "author": "Cedric Cervantes <cedric@starton.io>, Tibo Pendino <tibo@starton.io>",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.1.3",

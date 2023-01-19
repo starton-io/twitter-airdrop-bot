@@ -72,3 +72,4 @@ node sendToken.js
 ## Authors
 
 - [@cervantescedric - CTO @starton.io](https://linkedin.com/in/cedriccervantes/)
+- [@tibo-pendino - Backend Developer @starton.io](https://linkedin.com/in/tibo-pendino/)

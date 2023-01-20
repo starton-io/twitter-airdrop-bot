@@ -43,8 +43,8 @@ const run = async () => {
         }
         if (replies.data) {
             replies.data.forEach(tweet => {
-                if (tweet.referenced_tweets) {
-                    let match = tweet.referenced_tweets.find(tweet => tweet.id === tweetId)
+                if (tweet) {
+                    let match = (tweet) => { return tweet.id === tweetId }
                     if (match) {
                         const validAddresses = tweet.text.match(/0x[a-fA-F0-9]{40}/)
                         if (validAddresses) {

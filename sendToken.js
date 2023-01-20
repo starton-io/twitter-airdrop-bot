@@ -8,7 +8,7 @@ require('dotenv').config()
  * Init Starton
  */
 const starton = axios.create({
-    baseURL: "https://api.starton.io/v2",
+    baseURL: "https://api.starton.io/v3",
     headers: {
         "x-api-key": process.env.STARTON_API_KEY,
     },

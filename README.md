@@ -23,7 +23,7 @@ You also need to set the **tweet id** and **hashtag** related to your contest.
 
 - `TWITTER_TWEET_ID=` : You can find it in the url of your already published tweet
 
-- `TWITTER_HASHTAG=`
+- `TWITTER_HASHTAG=` : Just the hashtag string without `#`
 
 ## Starton Connect
 You need to have a Starton Connect account.
@@ -42,6 +42,8 @@ Once deployed you should add in the `.env` file:
 
 - `STARTON_SMART_CONTRACT_ADDRESS=`
 - `STARTON_SMART_CONTRACT_NETWORK=`
+- `STARTON_SMART_CONTRACT_SIGNER=`
+- `TOKEN_AMOUNT=`
 
 # Start the bot
 ## Get the winners
@@ -70,3 +72,4 @@ node sendToken.js
 ## Authors
 
 - [@cervantescedric - CTO @starton.io](https://linkedin.com/in/cedriccervantes/)
+- [@tibo-pendino - Backend Developer @starton.io](https://linkedin.com/in/tibo-pendino/)
